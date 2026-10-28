@@ -14,18 +14,18 @@ https://aloure-web.top/
 
 ## 本地预览与发布
 
-本站为轻量静态网站，无第三方运行依赖。需要 Node.js 20 或更高版本。
+本站沿用原有 VitePress 页面设计与主题，内容更新为个人源码分享博客。需要 Node.js 20 或更高版本。
 
 ```sh
 npm ci
 npm run docs:build
-python3 -m http.server 8080 --directory docs/.vitepress/dist
+npm run docs:preview
 ```
 
-修改 `site/index.html` 更新博客介绍页；推送到 `main` 后由 GitHub Actions 发布至 GitHub Pages。
+修改 `docs/index.md` 更新首页，修改 `docs/intro/` 中的 Markdown 文件更新文章；推送到 `main` 后由 GitHub Actions 发布至 GitHub Pages。
 
 ## 分享原则
 
 只分享合法、健康的项目和技术内容。引用第三方源码时标注原始出处，并遵守各项目的许可证；分享不代表对第三方作品的原创声明。
 
-本次改版重新建立个人博客内容，旧项目的页面、操作说明、推广素材与外部联络入口已从当前版本移除。历史提交保留，便于追溯变更。
+本次改版重新建立个人博客内容，旧项目的业务文案、操作说明与推广入口已从当前版本移除。历史提交保留，便于追溯变更。
