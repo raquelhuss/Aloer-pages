@@ -1,13 +1,12 @@
 {
-  "name": "alouer-docs",
-  "version": "1.0.0",
-  "description": "Alouer System Documentation",
+  "name": "aloer-pages",
+  "version": "2.0.0",
+  "private": true,
+  "description": "个人源码分享与开发记录博客",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:build": "node scripts/build.mjs"
   },
-  "devDependencies": {
-    "vitepress": "^1.6.3"
+  "engines": {
+    "node": ">=20"
   }
 }
